@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="500.0" maxWidth="600.0" minHeight="500.0" minWidth="600.0" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: white; -fx-background-insets: 20; -fx-padding: 20;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.mainwindowController">
+   <children>
+      <Button layoutX="135.0" layoutY="99.0" mnemonicParsing="false" onAction="#mywife" style="-fx-text-fill: blue;" text="Build Your Map" />
+      <Button layoutX="259.0" layoutY="99.0" mnemonicParsing="false" onAction="#upd" style="-fx-text-fill: blue;" text="Update Your Map" />
+      <Button layoutX="398.0" layoutY="99.0" mnemonicParsing="false" onAction="#findw" prefHeight="25.0" prefWidth="73.0" style="-fx-text-fill: blue;" text="Find way" />
+      <Label layoutX="149.0" layoutY="14.0" prefHeight="83.0" prefWidth="307.0" text="Main Window" textFill="#005eff">
+         <font>
+            <Font name="Andalus" size="51.0" />
+         </font>
+      </Label>
+      <Button fx:id="closing" layoutX="535.0" layoutY="459.0" mnemonicParsing="false" onAction="#close" style="-fx-text-fill: blue;" text="Close" />
+      <Label fx:id="sure3" layoutX="72.0" layoutY="415.0" text="Are you sure the entire map will be deleted by closing the program?!" textFill="#d70000" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="no3" layoutX="347.0" layoutY="456.0" mnemonicParsing="false" onAction="#noo3" prefHeight="25.0" prefWidth="45.0" style="-fx-text-fill: blue;" text="No" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="yes3" layoutX="237.0" layoutY="456.0" mnemonicParsing="false" onAction="#yess3" prefHeight="25.0" prefWidth="45.0" style="-fx-text-fill: blue;" text="Yes" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

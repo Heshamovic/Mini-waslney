@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="500.0" maxWidth="600.0" minHeight="500.0" minWidth="600.0" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: white; -fx-background-insets: 20; -fx-padding: 20;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.mainwindowController">
+   <children>
+      <Button layoutX="135.0" layoutY="99.0" mnemonicParsing="false" onAction="#mywife" style="-fx-text-fill: blue;" text="Build Your Map" />
+      <Button layoutX="259.0" layoutY="99.0" mnemonicParsing="false" onAction="#upd" style="-fx-text-fill: blue;" text="Update Your Map" />
+      <Button layoutX="398.0" layoutY="99.0" mnemonicParsing="false" onAction="#findw" prefHeight="25.0" prefWidth="73.0" style="-fx-text-fill: blue;" text="Find way" />
+      <Label layoutX="135.0" layoutY="14.0" prefHeight="83.0" prefWidth="331.0" text="MainWindow" textFill="#005eff">
+         <font>
+            <Font name="Segoe Script" size="45.0" />
+         </font>
+      </Label>
+      <Button fx:id="closing" layoutX="541.0" layoutY="461.0" mnemonicParsing="false" onAction="#close" style="-fx-text-fill: blue;" text="Close" />
+   </children>
+</AnchorPane>

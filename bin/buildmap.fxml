@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="500.0" maxWidth="600.0" minHeight="500.0" minWidth="600.0" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Dijkstra">
+   <children>
+      <Button fx:id="done" layoutX="289.0" layoutY="151.0" mnemonicParsing="false" onAction="#done" text="Add City/Way" textFill="#1500ff">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Label layoutX="136.0" layoutY="18.0" prefHeight="92.0" prefWidth="328.0" text="Updating Map" textFill="#0062ff">
+         <font>
+            <Font name="Andalus" size="51.0" />
+         </font>
+      </Label>
+      <Button fx:id="close4" layoutX="517.0" layoutY="455.0" mnemonicParsing="false" onAction="#closing4" text="Cancel" textFill="#1500ff">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="273.0" layoutY="213.0" mnemonicParsing="false" onAction="#done1" text="Remove City/Way" textFill="#1500ff">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="282.0" layoutY="280.0" mnemonicParsing="false" onAction="#suree2" text="Delete Entire Map" textFill="#1500ff">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="300.0" layoutY="343.0" mnemonicParsing="false" onAction="#show" text="Preview Map" textFill="#1500ff">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="dne1" layoutX="457.0" layoutY="290.0" text="Map Deleted!" textFill="#009420" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="sure2" layoutX="450.0" layoutY="265.0" prefHeight="78.0" prefWidth="134.0" text="The entire map will be deleted! click yes to proceed" textAlignment="CENTER" textFill="#dd0101" visible="false" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="yes2" layoutX="477.0" layoutY="343.0" mnemonicParsing="false" onAction="#yess2" text="Yes" textFill="#1500ff" visible="false" />
+      <Button fx:id="no2" layoutX="532.0" layoutY="343.0" mnemonicParsing="false" onAction="#noo2" text="No" textFill="#1500ff" visible="false" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="500.0" maxWidth="600.0" minHeight="500.0" minWidth="600.0" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Dijkstra">
+   <children>
+      <Button layoutX="468.0" layoutY="252.0" mnemonicParsing="false" onAction="#delete_node" prefHeight="25.0" prefWidth="81.0" text="Delete City" textFill="#1500ff" />
+      <TextField fx:id="deleteNode" layoutX="300.0" layoutY="252.0" style="-fx-background-color: #55abfb;" />
+      <TextField fx:id="deleteEdge1" layoutX="63.0" layoutY="352.0" style="-fx-background-color: #55abfb;" />
+      <TextField fx:id="deleteEdge2" layoutX="254.0" layoutY="352.0" style="-fx-background-color: #55abfb;" />
+      <Button layoutX="469.0" layoutY="352.0" mnemonicParsing="false" onAction="#delete_edge" prefHeight="25.0" prefWidth="81.0" text="Delete Way" textFill="#1500ff" />
+      <Button fx:id="closing6" layoutX="534.0" layoutY="449.0" mnemonicParsing="false" onAction="#close6" text="Cancel" textFill="#1500ff" />
+      <Label layoutX="101.0" layoutY="14.0" prefHeight="96.0" prefWidth="398.0" text="Delete Node / Edge" textFill="#003cff">
+         <font>
+            <Font name="Andalus" size="51.0" />
+         </font>
+      </Label>
+      <Label layoutX="324.0" layoutY="213.0" text="Delete City" textFill="#0033ff">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="113.0" layoutY="313.0" text="CityA" textFill="#0033ff">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="305.0" layoutY="313.0" text="CityB" textFill="#0033ff">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button layoutX="329.0" layoutY="134.0" mnemonicParsing="false" onAction="#suree1" text="Delete Entire Map" textFill="#1500ff">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="36.0" layoutY="449.0" mnemonicParsing="false" onAction="#show" text="Preview Connections" textFill="#1500ff" />
+      <Label fx:id="dne" layoutX="365.0" layoutY="182.0" text="Map Deleted!" textFill="#009a27" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="sure1" layoutX="334.0" layoutY="81.0" prefHeight="53.0" prefWidth="254.0" text="The entire map will be deleted! click yes to proceed" textAlignment="CENTER" textFill="#ae0000" visible="false" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="yes1" layoutX="505.0" layoutY="141.0" mnemonicParsing="false" onAction="#yess1" text="Yes" visible="false" />
+      <Button fx:id="no1" layoutX="543.0" layoutY="141.0" mnemonicParsing="false" onAction="#noo1" text="No" visible="false" />
+      <Label fx:id="del" layoutX="446.0" layoutY="287.0" prefHeight="53.0" prefWidth="126.0" text="Any edges exist will be Deleted!" textAlignment="CENTER" textFill="#008d34" visible="false" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="del1" layoutX="452.0" layoutY="298.0" text="Invalid Entry!" textFill="#da1503" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
